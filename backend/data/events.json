@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Tech Conference 2026",
+    "date": "15 August 2026",
+    "location": "Delhi",
+    "price": 499
+  },
+  {
+    "id": 2,
+    "name": "AI Workshop",
+    "date": "22 August 2026",
+    "location": "Bangalore",
+    "price": 299
+  },
+  {
+    "id": 3,
+    "name": "Music Festival",
+    "date": "30 August 2026",
+    "location": "Mumbai",
+    "price": 799
+  }
+]
