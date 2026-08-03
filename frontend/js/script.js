@@ -168,3 +168,48 @@ window.onload = ()=>{
     loadEvents();
 
 };
+
+
+// =====================================
+// Dark Mode
+// =====================================
+
+const themeBtn = document.getElementById("theme-toggle");
+
+if(localStorage.getItem("theme") === "dark"){
+
+    document.body.classList.add("dark");
+
+    if(themeBtn){
+
+        themeBtn.innerHTML="☀️ Light Mode";
+
+    }
+
+}
+
+if(themeBtn){
+
+themeBtn.addEventListener("click",()=>{
+
+document.body.classList.toggle("dark");
+
+const dark=document.body.classList.contains("dark");
+
+if(dark){
+
+localStorage.setItem("theme","dark");
+
+themeBtn.innerHTML="☀️ Light Mode";
+
+}else{
+
+localStorage.setItem("theme","light");
+
+themeBtn.innerHTML="🌙 Dark Mode";
+
+}
+
+});
+
+}
