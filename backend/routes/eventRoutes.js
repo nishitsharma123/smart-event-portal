@@ -1,25 +1,45 @@
 const express = require("express");
+
 const router = express.Router();
+
 const events = require("../data/events.json");
 
-// Get all events
-router.get("/", (req, res) => {
-    res.json(events);
+
+
+// Get All Events
+
+router.get("/", (req,res)=>{
+
+    res.status(200).json(events);
+
 });
 
-// Get event by ID
-router.get("/:id", (req, res) => {
+
+
+// Get Single Event
+
+router.get("/:id",(req,res)=>{
+
     const id = parseInt(req.params.id);
 
-    const event = events.find(e => e.id === id);
+    const event = events.find(e=>e.id===id);
 
-    if (!event) {
+    if(!event){
+
         return res.status(404).json({
-            message: "Event not found"
+
+            success:false,
+
+            message:"Event not found"
+
         });
+
     }
 
-    res.json(event);
+    res.status(200).json(event);
+
 });
+
+
 
 module.exports = router;

@@ -1,25 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Smart Event Management Portal</title>
+
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cards.css">
+
 </head>
 
 <body>
 
-    <h1>Smart Event Management Portal</h1>
+    <!-- ================= NAVBAR ================= -->
 
-    <p>DevOps Capstone Project</p>
+    <header>
 
-    <button onclick="loadEvents()">
-        Load Events
-    </button>
+        <div class="logo">
 
-    <div id="events"></div>
+            🎉 Smart Event Portal
 
-<script src="js/script.js"></script>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="events.html">Events</a>
+
+            <a href="booking.html">Bookings</a>
+
+            <a href="history.html">History</a>
+
+            <a href="admin.html">Admin</a>
+
+            <a href="login.html">
+
+                <button class="login-btn">
+
+                    Login
+
+                </button>
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+
+                Smart Event Management Portal
+
+            </h1>
+
+            <p>
+
+                Book amazing events across India with a single click.
+
+            </p>
+
+            <button onclick="scrollToEvents()">
+
+                Browse Events
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <div class="feature-card">
+
+            <h2>🎟 Easy Booking</h2>
+
+            <p>
+
+                Book tickets instantly without waiting.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h2>⚡ Fast Updates</h2>
+
+            <p>
+
+                Real-time event availability and information.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h2>🔒 Secure</h2>
+
+            <p>
+
+                Secure booking experience powered by modern technologies.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EVENTS ================= -->
+
+    <section id="events">
+
+        <h2 class="section-title">
+
+            Upcoming Events
+
+        </h2>
+
+        <div id="event-container">
+
+            <!-- Dynamic Events -->
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>
+
+            Smart Event Management Portal
+
+        </h3>
+
+        <p>
+
+            DevOps Capstone Project
+
+        </p>
+
+        <p>
+
+            Docker • Kubernetes • Jenkins
+
+        </p>
+
+        <p>
+
+            © 2026 All Rights Reserved
+
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>

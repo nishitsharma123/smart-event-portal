@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Smart Event Portal</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cards.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            🎉 Smart Event Portal
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="events.html">Events</a>
+
+            <a href="booking.html">Booking</a>
+
+            <a href="history.html">History</a>
+
+            <a href="admin.html">Admin</a>
+
+            <a href="login.html" class="active">
+
+                <button class="login-btn">
+
+                    Login
+
+                </button>
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= LOGIN SECTION ================= -->
+
+    <section class="hero" style="height:35vh;">
+
+        <div class="hero-content">
+
+            <h1>User Login</h1>
+
+            <p>
+
+                Login to manage your bookings.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= LOGIN CARD ================= -->
+
+    <section class="container" style="padding:60px 20px;">
+
+        <div class="feature-card" style="max-width:500px;margin:auto;">
+
+            <h2 style="margin-bottom:25px;color:#0b5ed7;">
+
+                Sign In
+
+            </h2>
+
+            <form id="loginForm">
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter Email"
+                    required>
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    required>
+
+                <button
+                    class="book-btn"
+                    type="submit">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <br>
+
+            <p style="text-align:center;">
+
+                Don't have an account?
+
+                <a href="#">
+
+                    Register
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>
+
+            Smart Event Management Portal
+
+        </h3>
+
+        <p>
+
+            Docker • Kubernetes • Jenkins
+
+        </p>
+
+        <p>
+
+            © 2026
+
+        </p>
+
+    </footer>
+
+    <script>
+
+    document
+    .getElementById("loginForm")
+    .addEventListener("submit",function(e){
+
+        e.preventDefault();
+
+        alert(
+
+            "Login Successful!\n\nWelcome to Smart Event Portal."
+
+        );
+
+        this.reset();
+
+    });
+
+    </script>
+
+</body>
+
+</html>

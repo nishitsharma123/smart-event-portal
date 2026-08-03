@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: smart-event-service
+  namespace: smart-event
+
+spec:
+
+  selector:
+    app: smart-event
+
+  ports:
+
+  - port: 80
+    targetPort: 3000
+
+  type: NodePort

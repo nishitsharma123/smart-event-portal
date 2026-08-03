@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Event | Smart Event Portal</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cards.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        🎉 Smart Event Portal
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="events.html">Events</a>
+
+        <a href="booking.html" class="active">Booking</a>
+
+        <a href="history.html">History</a>
+
+        <a href="admin.html">Admin</a>
+
+        <a href="login.html">
+
+            <button class="login-btn">
+
+                Login
+
+            </button>
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="hero" style="height:40vh;">
+
+    <div class="hero-content">
+
+        <h1>Book Your Event</h1>
+
+        <p>
+
+            Complete the form below to reserve your seat.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="container" style="padding:60px 20px;">
+
+    <div class="feature-card" style="max-width:700px;margin:auto;">
+
+        <h2 style="margin-bottom:25px;color:#0b5ed7;">
+
+            Event Booking Form
+
+        </h2>
+
+        <form id="bookingForm">
+
+            <label>Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required>
+
+            <br><br>
+
+            <label>Email Address</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required>
+
+            <br><br>
+
+            <label>Select Event</label>
+
+            <select id="event" required>
+
+                <option>Tech Conference 2026</option>
+                <option>AI Workshop</option>
+                <option>Music Festival</option>
+
+            </select>
+
+            <br><br>
+
+            <label>Number of Tickets</label>
+
+            <input
+                type="number"
+                id="tickets"
+                min="1"
+                max="10"
+                value="1">
+
+            <br><br>
+
+            <button
+                type="submit"
+                class="book-btn">
+
+                Confirm Booking
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <h3>
+
+        Smart Event Management Portal
+
+    </h3>
+
+    <p>
+
+        Docker • Kubernetes • Jenkins
+
+    </p>
+
+    <p>
+
+        © 2026
+
+    </p>
+
+</footer>
+
+<script>
+
+document
+.getElementById("bookingForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert(
+"🎉 Booking Successful!\n\nThank you for booking with Smart Event Portal."
+);
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+
+</html>

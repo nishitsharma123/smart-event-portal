@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Smart Event Portal</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            🎉 Smart Event Portal
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="events.html">Events</a>
+
+            <a href="booking.html">Booking</a>
+
+            <a href="history.html">History</a>
+
+            <a href="admin.html" class="active">Admin</a>
+
+            <a href="login.html">
+
+                <button class="login-btn">
+
+                    Login
+
+                </button>
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" style="height:40vh;">
+
+        <div class="hero-content">
+
+            <h1>Admin Dashboard</h1>
+
+            <p>
+
+                Manage events and monitor bookings.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section class="dashboard">
+
+        <div class="dashboard-card">
+
+            <h2>12</h2>
+
+            <p>Total Events</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h2>245</h2>
+
+            <p>Registered Users</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h2>534</h2>
+
+            <p>Total Bookings</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h2>₹2,45,000</h2>
+
+            <p>Total Revenue</p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EVENT TABLE ================= -->
+
+    <section class="container" style="padding:50px 20px;">
+
+        <div class="feature-card">
+
+            <h2 style="margin-bottom:25px;color:#0b5ed7;">
+
+                Manage Events
+
+            </h2>
+
+            <table class="admin-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Event</th>
+
+                        <th>Date</th>
+
+                        <th>Location</th>
+
+                        <th>Price</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="adminTableBody">
+
+                    <!-- Filled by JavaScript -->
+
+                </tbody>
+
+            </table>
+
+            <br>
+
+            <button
+                class="book-btn"
+                onclick="addEvent()">
+
+                + Add New Event
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Smart Event Management Portal</h3>
+
+        <p>Docker • Kubernetes • Jenkins</p>
+
+        <p>© 2026</p>
+
+    </footer>
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

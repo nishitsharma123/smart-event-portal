@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: smart-event-deployment
+  namespace: smart-event
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: smart-event
+
+  strategy:
+    type: RollingUpdate
+
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+
+  template:
+
+    metadata:
+      labels:
+        app: smart-event
+
+    spec:
+
+      containers:
+
+      - name: smart-event
+
+        image: nishitsharma128/smart-event-portal:v1
+
+        imagePullPolicy: Always
+
+        ports:
+        - containerPort: 3000
+
+        resources:
+
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+
+        readinessProbe:
+
+          httpGet:
+            path: /
+            port: 3000
+
+          initialDelaySeconds: 10
+          periodSeconds: 5
+
+        livenessProbe:
+
+          httpGet:
+            path: /
+            port: 3000
+
+          initialDelaySeconds: 30
+          periodSeconds: 10

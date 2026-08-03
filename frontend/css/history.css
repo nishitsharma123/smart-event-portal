@@ -1,0 +1,89 @@
+/* =====================================
+   BOOKING HISTORY TABLE
+===================================== */
+
+.history-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.history-table th{
+
+    background:#0b5ed7;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+.history-table td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.history-table tr:nth-child(even){
+
+    background:#f7f7f7;
+
+}
+
+.history-table tr:hover{
+
+    background:#eef5ff;
+
+}
+
+.status{
+
+    padding:8px 16px;
+
+    border-radius:25px;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+.confirmed{
+
+    background:#28a745;
+
+}
+
+.pending{
+
+    background:#ffc107;
+
+    color:#222;
+
+}
+
+.cancelled{
+
+    background:#dc3545;
+
+}
+
+@media(max-width:768px){
+
+.history-table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+}
