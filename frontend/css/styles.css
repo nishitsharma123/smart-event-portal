@@ -446,3 +446,159 @@ width:100%;
 }
 
 }
+
+
+/* =============================
+Version Badge
+============================= */
+
+.version-badge{
+
+display:inline-block;
+
+background:#2563eb;
+
+color:white;
+
+padding:8px 18px;
+
+border-radius:30px;
+
+margin-bottom:20px;
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+/* =============================
+Release Banner
+============================= */
+
+.release-banner{
+
+padding:18px;
+
+background:#dbeafe;
+
+text-align:center;
+
+font-weight:600;
+
+color:#1d4ed8;
+
+}
+
+/* =============================
+Theme Button
+============================= */
+
+.theme-btn{
+
+padding:10px 18px;
+
+border:none;
+
+background:#111827;
+
+color:white;
+
+border-radius:10px;
+
+cursor:pointer;
+
+margin-right:15px;
+
+transition:.3s;
+
+}
+
+.theme-btn:hover{
+
+transform:translateY(-2px);
+
+}
+
+/* =============================
+Dark Theme
+============================= */
+
+body.dark{
+
+background:#0f172a;
+
+color:#f8fafc;
+
+}
+
+body.dark header{
+
+background:#111827;
+
+}
+
+body.dark footer{
+
+background:#111827;
+
+border-top:none;
+
+}
+
+body.dark .hero{
+
+background:linear-gradient(
+135deg,
+#111827,
+#1e293b
+);
+
+}
+
+body.dark .hero h1{
+
+color:white;
+
+}
+
+body.dark .hero p{
+
+color:#cbd5e1;
+
+}
+
+body.dark .feature-card,
+body.dark .event-card,
+body.dark .dashboard-card{
+
+background:#1e293b;
+
+color:white;
+
+}
+
+body.dark input,
+body.dark select{
+
+background:#334155;
+
+color:white;
+
+border:1px solid #475569;
+
+}
+
+body.dark table{
+
+background:#1e293b;
+
+color:white;
+
+}
+
+body.dark td{
+
+border-color:#334155;
+
+}
