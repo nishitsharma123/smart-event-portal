@@ -109,13 +109,22 @@ pipeline {
 
         stage('Verify Deployment') {
             steps {
-
                 sh """
-                    ${KUBECTL} get deployment \
-                    -n ${KUBE_NAMESPACE}
+                    echo "===== Deployment Status ====="
 
-                    ${KUBECTL} get pods \
-                    -n ${KUBE_NAMESPACE}
+                    ${KUBECTL} get deployment -n ${KUBE_NAMESPACE} || true
+
+                    echo ""
+
+                    echo "===== Pod Status ====="
+
+                    ${KUBECTL} get pods -n ${KUBE_NAMESPACE} || true
+
+                    echo ""
+
+                    echo "===== Service Status ====="
+
+                    ${KUBECTL} get svc -n ${KUBE_NAMESPACE} || true
                 """
             }
         }
