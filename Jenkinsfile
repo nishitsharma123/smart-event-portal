@@ -27,7 +27,7 @@ pipeline {
                     docker --version
 
                     echo "===== kubectl ====="
-                    kubectl.exe version --client
+                    /mnt/c/ProgramData/chocolatey/bin/kubectl.exe version --client
 
                     echo "===== Current Directory ====="
                     pwd
